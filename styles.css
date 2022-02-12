@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #2a9dc0 ;
+}
+
+h1{
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 4em;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+
+header{
+    width: 700px;
+    height: 70px;
+    display: flex;
+}
+
+header input{
+    flex: 1;
+    background: white;
+    border: none;outline: none;
+    padding-left: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-size: 1.4em;
+    transition: .1s;
+}
+
+header button{
+    width: 100px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none;
+    background: #4CC9F0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .5);
+}
+
+header input:focus,header input:hover{
+    border: 3px solid #4CC9F0;
+    border-right: none;
+}
+
+header button:hover{
+    background-color: #2eabd1;
+}
+
+.task-container{
+    background: #4CC9F0;
+    min-height: 50vh;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    padding: 0 1rem;
+    padding-top: 1rem;
+}
+
+.task{
+    width: 80%;
+    background: #fff;
+    padding: 0.5rem 2rem ;
+    margin: 1rem;
+    border-radius: 10rem;
+    display: flex;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+}
+
+.task-container p{
+    display: inline;
+    flex: 1;
+    font-family: "poppins", sans-serif;
+    font-size: 1.3em;
+    line-height: 50px;
+}
+
+.task button{
+    height: 50px;
+    width: 50px;
+    outline: none;border: none;
+    background: #fff;
+    color: #4CC9F0;
+    font-size: 1.3em;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 10rem;
+    border: 2px solid #2a9dc0;
+}
+
+
+.task button:hover{
+    background-color: #4CC9F0;
+    color: #fff;
+    border: white;
+}
+
+.fa-plus, .fa-check{
+    pointer-events: none;
+} 
+
+.fa-trash{
+    font-size: .8em;
+}
+
+.active{
+    transition: .4s;
+    opacity: .7;
+}
+
+.active p{
+    text-decoration: line-through;
+}
